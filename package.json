@@ -1,6 +1,6 @@
 {
   "name": "descriptor-info-type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "types for descriptor-info",
   "main": "index.js",
   "scripts": {
