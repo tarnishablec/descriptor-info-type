@@ -1,0 +1,1 @@
+# descriptor-info-type
