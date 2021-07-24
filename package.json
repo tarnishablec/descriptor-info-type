@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc --emitDeclarationOnly",
-    "prepublish": "npm version patch && npm run build"
+    "prepublish": "npm run build && git add . && git commit && npm version patch"
   },
   "types": "./type/index.d.ts",
   "repository": "https://github.com/tarnishablec/descriptor-info-type.git",
