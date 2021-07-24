@@ -1,0 +1,18 @@
+{
+  "name": "descriptor-info-type",
+  "version": "1.0.1",
+  "description": "types for descriptor-info",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc --emitDeclarationOnly",
+    "prepublish": "npm version patch && npm run build"
+  },
+  "types": "./type/index.d.ts",
+  "repository": "https://github.com/tarnishablec/descriptor-info-type.git",
+  "author": "tarnishablec <tarnishablec@outlook.com>",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "license": "MIT"
+}
