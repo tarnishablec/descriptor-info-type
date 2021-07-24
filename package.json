@@ -7,7 +7,7 @@
     "build": "npx tsc --emitDeclarationOnly",
     "prepublish": "npm run build && git add . && git commit && npm version patch"
   },
-  "types": "./type/index.d.ts",
+  "types": "./types/index.d.ts",
   "repository": "https://github.com/tarnishablec/descriptor-info-type.git",
   "author": "tarnishablec <tarnishablec@outlook.com>",
   "publishConfig": {
