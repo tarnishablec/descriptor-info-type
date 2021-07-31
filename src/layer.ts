@@ -146,6 +146,7 @@ export type LayerDesc = {
         from: number
         to: number
         paragraphStyle: {
+          align?: string
           defaultTabWidth: number
           directionType: string
           endIndent: number
@@ -190,6 +191,7 @@ export type LayerDesc = {
         from: number
         to: number
         textStyle: {
+          autoKern?: string
           baselineDiretion: string
           baselineShift: number
           baseParentStyle: {
