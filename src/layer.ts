@@ -107,6 +107,38 @@ export type LayerDesc = {
   }
   preserveTransparency: boolean
   proportionalScaling: boolean
+  keyOriginType?: Array<
+    Record<
+      "null",
+      Partial<{
+        keyActionMode: number
+        keyOriginBoxCorners: {}
+        keyOriginResolution: number
+        /**
+         * borde-radius
+         */
+        keyOriginRRectRadii: Record<
+          | "bottomLeft"
+          | "bottomRight"
+          | "topLeft"
+          | "topRight"
+          | "unitValueQuadVersion",
+          number
+        >
+        keyOriginShapeBBox: Record<
+          "bottom" | "left" | "right" | "top" | "keyOriginResolution",
+          number
+        >
+        /**
+         * 2 => 矩形
+         *
+         * 5 => 椭圆
+         */
+        keyOriginType: number
+        transform: Transform
+      }>
+    >
+  >
   //
 
   /** SMARTOBJECT ONLY */
